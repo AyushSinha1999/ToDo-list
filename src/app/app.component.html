@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="header">
+    <h1>{{ title }}</h1>
+    <input type="text"  #data placeholder="Input Your Task">
+    <button (click)="add(data)">Add</button>
+  </div>
+  <div class="list">
+    <ul class="todo-list">
+      <li *ngFor="let the data of list">{{ data }} <span class="close" (click)="delete( data )">X</span></li>
+  
+    </ul>
+  </div>
+</div>
